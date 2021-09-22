@@ -2,8 +2,7 @@ import { alert, error, info,notice, defaultModules, success, defaults} from '../
 import '@pnotify/core/dist/PNotify.css';
 import '@pnotify/core/Angeler.css';
 import '@pnotify/core/Material.css';
-import '@pnotify/animate/dist/PNotifyAnimate'
-// import '@pnotify/mobile/dist/PNotifyMobile.css';
+// import '@pnotify/animate/dist/PNotifyAnimate'
 import '@pnotify/mobile/dist/PNotifyMobile.css';
 // import {notice, defaultModules} from '@pnotify/core';
 import * as PNotifyMobile from '@pnotify/mobile';
@@ -21,9 +20,9 @@ const myNotice = notice({
   modules: new Map([
     ...defaultModules,
     [PNotifyMobile, {
-      swipeDismiss: true,
-      // closerHover: false,
-      closer: false
+        // swipe_dismiss: true,
+       swipeDismiss: true,
+       closerHover: false,
     }]
   ])
 });
